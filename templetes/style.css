@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin: 0;
+}
+
+.logo, .flag {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 1em;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.analyze-btn {
+    background-color: #007bff;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.analyze-btn:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+}
+
+.feedback-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.feedback-section input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    width: 60%;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    border-radius: 0 4px 4px 0;
+}
+
+.submit-btn:hover {
+    background-color: #1f7a34;
+}
+
+.contact-btn {
+    background-color: #6c757d;
+    color: white;
+    margin-top: 10px;
+}
+
+.contact-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header h1 {
+        margin-top: 10px;
+    }
+
+    .logo, .flag {
+        margin-bottom: 10px;
+    }
+
+    .feedback-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .feedback-section input[type="text"] {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .submit-btn {
+        border-radius: 4px;
+    }
+}
